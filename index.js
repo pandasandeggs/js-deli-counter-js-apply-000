@@ -1,9 +1,10 @@
-var katzDeli = ["Ada", "Grace", "Bill", "Jane", "Ann"];
+var katzDeli = [1, 2, 3, 4, 5];
+var number = 0
 
-
-function takeANumber(katzDeli, name){
-  katzDeli.push(name);
-  return `Welcome, ${name}. You are number ${katzDeli.length} in line.`
+function takeANumber(katzDeli){
+  number = number + 1
+  katzDeli.push(number);
+  return `Welcome, you are number ${number} in line.`
 }
 
 function nowServing(katzDeli){
